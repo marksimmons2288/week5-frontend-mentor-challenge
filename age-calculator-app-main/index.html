@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <!-- Connect Mobile and Desktop stylessheets -->
+   <link rel="stylesheet" href="./mobile/style.css">
+   <link rel="stylesheet" href="./styles/desktop.css">
+</head>
+<body>
+
+  <!-- Form Container -->
+<form class="calculator" id="ageForm">
+  <div class="input_container">
+    <label for="day"
+    class="input_container_label">
+    <!-- Day Input Field -->
+  DAY</label>
+  <div class="input">
+    <input 
+    id="day"
+    name="day"
+    class="input_control"
+    type="number"
+    inputmode="numeric"
+    min="1"
+    max="31"
+    step="1"
+    placeholder="5"
+    required>
+ </div>
+  </div>
+<!-- Month Input Field -->
+   <div class="input_container">
+    <label for="month"
+    class="input_container_label">
+  MONTH</label>
+  <div class="input">
+    <input 
+    id="month"
+    name="month"
+    class="input_control"
+    type="number"
+    inputmode="numeric"
+    min="1"
+    max="12"
+    step="0"
+    placeholder="12"
+    required>
+  </div>
+   </div>
+<!-- Year Input Field -->
+   <div class="input_container">
+    <label for="year"
+    class="input_container_label">
+  YEAR</label>
+  <div class="input">
+    <input 
+    id="year"
+    name="year"
+    class="input_control"
+    type="number"
+    inputmode="numeric"
+    min="1"
+    step="0"
+    placeholder="1975"
+    required>
+  </div>
+   </div>
+   <!-- Span for HR Calculate Button -->
+   <div class="divider">
+    <hr>
+      <button type="submit" class="submit_button"><img src="./assets/images/icon-arrow.svg" alt="Calculate_Icon"></button>
+      </div>
+<!-- Years Result -->
+<div class="year_result_field"> 
+  <h1><span id="age_result">--</span>years</h1>
+  <h1><span id="months_result">--</span>months</h1>
+  <h1><span id="days_result">--</span>days</h1>
+</div>
+</form>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
