@@ -1,0 +1,96 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Load custom fonts */
+ @font-face {
+    font-family: 'POPPINS';
+    src: url('../assets/fonts/Poppins-Bold.ttf');
+ }
+ @font-face {
+    font-family: 'POPPINS-ExtraBoldItalic';
+    src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf');
+}
+ @font-face {
+    font-family: 'POPPINS-Regular';
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+ }
+
+body{
+    background-color:hsl(0, 0%, 94%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculator_form{
+     background-color: hsl(0, 100%, 100%);
+     border-radius: 1rem 1rem 10rem 1rem;
+     width: 600px; 
+     height: 100%;   
+     
+}
+
+.main_input_container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.input_container_label{
+    font-family:poppins-regular;
+}
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.button_container::before,
+.button_container::after{
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid hsl(0, 0%, 94%)
+}
+
+.submit_button{
+    background-color:hsl(259, 100%, 65%);
+    border-radius: 50px;
+    border: hsl(259, 100%, 65%);
+    margin: 30px;
+
+}
+
+@media (max-width:600px){
+
+}
+
+
+.age_result_field{
+    font-family: 'Poppins-ExtraBoldItalic';
+    font-size: 25px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.age_result_field span{
+    color:hsl(259, 100%, 65%) ;
+}
+
