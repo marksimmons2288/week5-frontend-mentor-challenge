@@ -84,7 +84,6 @@ input {
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: relative;
 }
 
 .button_container::before,
@@ -103,10 +102,11 @@ input {
     padding: 20px;
 
 }
-
+/* mobile layout */
 @media (max-width:600px) {
 
 }
+
 
 .age_result_field {
     font-family: 'Poppins-ExtraBoldItalic';
