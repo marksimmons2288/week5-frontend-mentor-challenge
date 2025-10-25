@@ -107,7 +107,6 @@ input {
 
 }
 
-
 .age_result_field {
     font-family: 'Poppins-ExtraBoldItalic';
     font-size: 25px;
@@ -115,8 +114,11 @@ input {
     display: flex;
     flex-direction: column;
 }
-
+/* Styling of the span numbers */
 .age_result_field span {
     color:hsl(259, 100%, 65%) ;
 }
 
+
+
+/* Had issues with reponsiveness */
